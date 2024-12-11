@@ -25,6 +25,23 @@ tags: javascript, .net, GitHub, copilot, AI, csu
 
 Content for first section
 
+## Required pre-requisites
+| | |
+|----------------|-----------------|
+| GitHub account |  |
+| GitHub Copilot Access |  |
+| VS Code | [Download VS Code](https://code.visualstudio.com/Download) |
+| Set up GitHub Copilot in VS Code |  [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/setup) |
+| A browser      | [Download Microsoft Edge](https://www.microsoft.com/edge) or Google Chrome |
+
+## Optoinal pre-requisites
+
+| | |
+|----------------|-----------------|
+| Node.js v16+   | [Download Node.js](https://nodejs.org) |
+| .Net Core   | [Download .Net Core](https://dotnet.microsoft.com/download) |
+| Python | |
+
 ---
 
 ## Second section
