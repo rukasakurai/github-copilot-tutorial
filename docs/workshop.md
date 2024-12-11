@@ -919,7 +919,7 @@ Ask to the chat to document it. You will see that GitHub Copilot chat will expla
 
 ---
 
-# Lab .NET
+# Lab: .NET
 
 The goal is to create a simple WebAPI using .NET 6.0 and Docker with the help of GitHub Copilot.
 Follow the instructions below and try to use GitHub Copilot as much as possible.
