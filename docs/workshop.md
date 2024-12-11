@@ -1,7 +1,7 @@
 ---
 published: true
 type: workshop
-title: Product Hands-on Lab - GitHub Copilot, your new AI pair programmer  
+title: GitHub Copilot, your new AI pair programmer  
 short_title: GitHub Copilot, your new AI pair programmer
 description: Discover how to leverage GitHub Copilot to develop your project
 level: beginner
@@ -21,26 +21,23 @@ tags: javascript, .net, GitHub, copilot, AI, csu
 #   - Section 2 title
 ---
 
-# Workshop Title
+# GitHub Copilot Hands-on Lab
+This hands-on lab is intended as material that can be used as the first step in learning how to use GitHub Copilot. The "First steps with GitHub Copilot" and "User Copilot Chat to imporve code quality" and "Prompt engineering in Copilot Chat" sections are recommended for everyone. The intent for the following programming language dependent sections are so that users can choose and prioritize depending on the intended use case.
 
-Content for first section
+This workshop can be acccessed from the following URL: https://aka.ms/ws?src=gh:rukasakurai/github-copilot-tutorial/main/docs/
 
 ## Required pre-requisites
-| | |
-|----------------|-----------------|
-| GitHub account |  |
-| GitHub Copilot Access |  |
-| VS Code | [Download VS Code](https://code.visualstudio.com/Download) |
-| Set up GitHub Copilot in VS Code |  [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/setup) |
-| A browser      | [Download Microsoft Edge](https://www.microsoft.com/edge) or Google Chrome |
+- GitHub account
+- GitHub Copilot Access
+- [VS Code](https://code.visualstudio.com/Download)
+- [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/setup)
+- [Microsoft Edge](https://www.microsoft.com/edge) or Google Chrome
 
 ## Optional pre-requisites
-
-| | |
-|----------------|-----------------|
-| Node.js v16+   | [Download Node.js](https://nodejs.org) |
-| .Net Core   | [Download .Net Core](https://dotnet.microsoft.com/download) |
-| Python | |
+- [GitHub Copilot for Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot) |
+- [Node.js](https://nodejs.org) |
+- [.Net Core](https://dotnet.microsoft.com/download) |
+- Python
 
 ---
 
