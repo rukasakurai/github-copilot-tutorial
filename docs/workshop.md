@@ -50,6 +50,7 @@ python --version
 ```
 
 ---
+
 # GitHub Copilot overview
 GitHub Copilot is an AI coding assistant that helps you write code faster and with less effort, allowing you to focus more energy on problem solving and collaboration.
 
@@ -61,7 +62,7 @@ https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features
 
 ---
 
-# Github Copilot (Code completion)
+# Code Completion
 
 This section will guide you through the first steps with GitHub Copilot.
 
@@ -738,7 +739,7 @@ what is the most secure way to upload a photo from my app?
 
 ---
 
-# Develop using Pytorch
+# Lab: Pytorch
 
 In this exercise, you are going to develop and test a computer vision model using Pytorch
 
@@ -787,7 +788,7 @@ While Pytorch model training and inference can be performed on a local machine, 
 
 ---
 
-# Develop a NodeJS server
+# Lab: Node.js
 
 In this exercise, you are going to develop a real project following functional requirements. You can do it by yourself or...with the help of GitHub Copilot.
 
@@ -918,7 +919,7 @@ Ask to the chat to document it. You will see that GitHub Copilot chat will expla
 
 ---
 
-# .Net Core
+# Lab .NET
 
 The goal is to create a simple WebAPI using .NET 6.0 and Docker with the help of GitHub Copilot.
 Follow the instructions below and try to use GitHub Copilot as much as possible.
@@ -991,11 +992,3 @@ dotnet publish -c Release -o publish
 docker build -t dotnetapp .
 docker run -d -p 8080:80 --name dotnetapp dotnetapp
 ```
-
----
-
-# Additional information
-
----
-
-# References
