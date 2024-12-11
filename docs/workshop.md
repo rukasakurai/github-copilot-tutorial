@@ -50,8 +50,18 @@ python --version
 ```
 
 ---
+# GitHub Copilot overview
+GitHub Copilot is an AI coding assistant that helps you write code faster and with less effort, allowing you to focus more energy on problem solving and collaboration.
 
-# First steps with Github Copilot
+## GitHub Copilot features
+Code Completion and Copilot Chat are the two most commonly used features of GitHub Copilot, and this hands-on lab will mainly cover these features.
+
+For additional features please check 
+https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features
+
+---
+
+# Github Copilot (Code completion)
 
 This section will guide you through the first steps with GitHub Copilot.
 
@@ -67,9 +77,19 @@ cd gh-copilot-demo
 code .
 ```
 
-## Natural Language Translations
+## GitHub Copilot shortcuts in VS Code
+Use shortcuts to interact with GitHub Copilot.
 
-**Automate text completion**
+Refer to 
+https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-your-environment
+
+<div class="tip" data-title="tip">
+
+> If you can't remember the shortcuts, hover your pointer on top of a suggestion to make the most commonly used shortcuts to appear.
+
+</div>
+
+## Code completion
 
 Open file `album-viewer/lang/translations.json`
 
@@ -90,12 +110,9 @@ Open file `album-viewer/lang/translations.json`
 
 <br>
 
-## Code Generation
+## Code from comment generation
 
-**What is a prompt?**
-In the context of GitHub Copilot, a prompt is a piece of natural language description that is used to generate code suggestions. It's the input that GitHub Copilot uses to generate code. It can be a single line or a multiple lines description.
-
-**Generate code from prompt**
+**Generate code from a comment**
 
 Create a new `album-viewer/utils/validators.ts` file and start with the prompt:
 
@@ -113,20 +130,7 @@ GitHub Copilot can help you also to write `RegExp patterns`. Try these:
 
 <br>
 
-## GitHub Copilot Shortcuts in VS Code
-Once you start typing a prompt and GitHub Copilot generate proposals, you can use shortcuts to interact with GitHub Copilot.
-
-Refer to 
-https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-your-environment
-
-<div class="tip" data-title="tip">
-
-> If you can't remember the shortcuts, hover your pointer on top of a suggestion to make the most commonly used shortcuts to appear.
-
-</div>
-
-
-**Discover new tool and library on the job with GitHub Copilot**
+**Explore alternative suggestions**
 
 Still on the same `album-viewer/utils/validators.ts` file add the following prompt:
 
@@ -137,11 +141,10 @@ Still on the same `album-viewer/utils/validators.ts` file add the following prom
 <div class="info" data-title="info">
 
 > For this one it will probably give you proposal that call some methods not defined here and needed to be defined. It's a good opportunity to explore the alternatives using the `ctrl+enter` shortcut to display the GitHub Copilot pane.
-<br>You can choose one that uses something that looks like coming for an external library and use GitHub Copilot to import it showing that the tool helps you discover new things.
 
 </div>
 
-**Complex algoritms generation**
+**Additional examples**
 
 In the `albums-api/Controllers/AlbumController.cs` file try to complete the `GetByID` method:
 
@@ -265,12 +268,9 @@ import {validateAlbumId} from '../src/validators';
 ```
 
 It looks ok but because GitHub Copilot doesn't have access to all your code, only the open tab and limited informations, you can see that both the path and the function name are wrong.
-<br>
-... At least he tried ...
-<br>
-but it's a good way to show that GitHub Copilot is not magic and you have to use it with your other IDE feature and your brain :)
+It's a good way to show that GitHub Copilot is not magic and you have to use it with your other IDE feature and your brain.
 
-- Accept the suggestion and change the path. You will be able to have VS Code to give you the available function with the `ctrl+space` shortcut.
+- Accept the suggestion and change the path. You will be able to have VS Code give you the available function with the `ctrl+space` shortcut.
 
 - Add a comment with the first function you want to test and let the magic happen:
 
@@ -347,11 +347,9 @@ you can play with other prompts like:
 # find and replace the %%VERSION%% by the github action run id in every appmanifest.yml file
 ```
 
-## Infra As Code
+## Infrastructure-as-code
 
-GitHub Copilot can also help you write Infrastructure as code. It can generate code for `Terraform, ARM, Bicep, Pulumi, etc...` and also `Kubernetes manifest files`.
-
-### Bicep
+GitHub Copilot can also help you write infrastructure-as-code (e.g., Bicep)
 
 Open the `main.bicep`file in `iac/bicep` folder and start typing prompts at the end of the file to add new resources:
 
@@ -359,16 +357,6 @@ Open the `main.bicep`file in `iac/bicep` folder and start typing prompts at the 
 // Container Registry
 
 // Azure Cognitive Services Custom Vision resource
-```
-
-### Terraform
-
-Open the `app.tf`file in `iac/terraform` folder and start typing prompts at the end of the file to add new resources:
-
-```yml
-# Container Registry
-
-# Azure Cognitive Services Custom Vision resource
 ```
 
 ## Generate Git Commit comment
@@ -440,7 +428,7 @@ From there by starting a new line with a secondary level title it will start gen
 
 ---
 
-# Use GitHub Copilot Chat to improve code quality
+# GitHub Copilot Chat
 
 GitHub Copilot is a generative AI and thus, perfect to generate code, but it has powerfull analysis capabilities on your code that can be used in several case to improve code quality like: find security issues, bad practices in your code and générate a fix, refactor and add comment to legacy code, generate tests, etc...
 
@@ -581,7 +569,7 @@ Open the `album-api/Controllers/UnsecuredController.cs` file and type questions 
 > Generate a unit tests class for this code
 ```
 
-You can also use GitHub Copilot to help you generate Stubs and Mocks for your tests.
+You can also use GitHub Copilot to help you generate stubs and mocks for your tests.
 
 ```text
 > Generate a mock for FileStream class
@@ -601,8 +589,7 @@ Chat participants are like specialized experts who can assist you with specific 
 - **@workspace**: This chat participant has knowledge about the code in your workspace and can help you navigate it by finding relevant files or classes. The @workspace chat participant uses a meta prompt to determine what information to collect from the workspace to help answer your question.
 - **@vscode**: This chat participant is knowledgeable about commands and features in the VS Code editor itself, and can assist you in using them.
 - **@terminal**: This chat participant has context about the Visual Studio Code terminal shell and its contents.
-
-They may not be super rich for the moment but their features will continue to grow over the time. Here are some example
+- **@azure**: Thit chat participant is designed to help streamline the process of developing with Azure.
 
 Open the side Chat panel and type **@workspace /New* to specify that you want to create a new project. For instance, try to create an Asp.Net project
 
@@ -614,24 +601,24 @@ It should create a structured project and even a new button to create the file. 
 
 ![GitHub Copilot Chat Participants](assets/agents.png)
 
-## @azure
-Install
+### GitHub Copilot for Azure (`@azure`)
+With GitHub Copilot for Azure (`@azure`), you can have a conversation with GitHub Copilot that uses information about your Azure environment. It is useful in scenarios such as resource management, diagnostics, cost management, etc.
+
+To use GitHub Copilot for Azure (`@azure`), you will need to install the extension: 
 https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot
 
+#### Sample prompts
 `@azure What can you do?`
-
 If you are not signed into Azure, this will prompt you to signin.
+
+For additional prompts, refer to: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot
 
 ## Tips
 
-GitHub Copilot Chat is very handful but for a developer, leaving the keyboard and having to take the mouse to open the Chat tab can be boring. You can directly call the Chat inside the code editor.
+For a developer, leaving the keyboard and having to take the mouse to open the Chat tab can be inconvenient. You can directly call the Chat inside the code editor.
 
 1- Open any file containing code
-
 2- Use the shortcut **Ctrl + i**. It should open the Quick chat popup, a small chat windows where you put your cursor
-
-![GitHub Copilot Quick Chat](assets/quickchat.png)
-
 3- Type any command to generate some code (i.e. "Create a C# class named Toto). The generated code is injected inside the current file which may be what you want
 
 ---
@@ -678,10 +665,10 @@ Write a MusicStyle record that conatins a List<MusicStyle> with 6 sample values 
 The chat GitHub Copilot can use external references to build more accurate suggestions. For exemple if you want to generate a code that make a request to an API you can provide an example of the API response in the chat or the url to the API reference. GitHub Copilot will use it to generate better code.
 
 ```bash
-Write a TS function that retreiev all dog breeds from the following API and return an array of Breed objects Request: HTTP GET https://dog.ceo/api/breeds/list/all
+Write a TS function that retreieves all dog breeds from the following API and return an array of Breed objects Request: HTTP GET https://dog.ceo/api/breeds/list/all
 ```
 
-GitHub Copilot will use the given external reference to generate the code. You will see that he wil generate the Breef interface (or class) with a subBreeds property. It's coming from the API given by the external reference.
+GitHub Copilot will use the given external reference to generate the code. You will see that he wil generate the Breed interface (or class) with a subBreeds property. It's coming from the API given by the external reference.
 
 ```ts
 interface Breed {
@@ -765,26 +752,36 @@ git clone https://github.com/rukasakurai/object-detection
 Look that the directory and file structure of this repository and explain what it is for
 ```
 
-
-
 ## Pytorch completions
+### Training code
+Open file `src/train.py`
 
+Select the code and in GitHub Copilot Chat ask "@workspace /explain concisely"
 
+Play around with other GitHub Copilot capabilites.
+
+### Inference code
+
+Open file `src/train.py`
+
+Select the code and in GitHub Copilot Chat ask "@workspace /explain concisely"
+
+Play around with other GitHub Copilot capabilites.
 
 ## Infrasturcture-as-code
 While Pytorch model training and inference can be performed on a local machine, it is often useful to leverage cloud resources. These cloud resources can be provisioned using the GUI, but leveraging infrastructure-as-code is often preferrable from the perspective of repeatability and teamwork.
 
 ### Ask @azure for recommended Azure resources
-```
+```text
 @azure What Azure resources do you recommend that I use for training and inference using PyTorch?
 ```
 
 ### Use GitHub completions to create infrastructure-as-code
-```
+```bicep
 # Azure Machine Learning resource for training and testing
 ```
 
-```
+```bicep
 # Azure Container Apps for hosting the PyTorch model
 ```
 
