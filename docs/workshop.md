@@ -739,9 +739,9 @@ what is the most secure way to upload a photo from my app?
 
 ---
 
-# Lab: Pytorch
+# Lab: PyTorch
 
-In this exercise, you are going to develop and test a computer vision model using Pytorch
+In this exercise, you are going to develop and test a computer vision model using PyTorch
 
 ## Clone the sample repository
 ```
@@ -753,7 +753,6 @@ git clone https://github.com/rukasakurai/object-detection
 Look that the directory and file structure of this repository and explain what it is for
 ```
 
-## Pytorch completions
 ### Training code
 Open file `src/train.py`
 
@@ -770,7 +769,7 @@ Select the code and in GitHub Copilot Chat ask "@workspace /explain concisely"
 Play around with other GitHub Copilot capabilites.
 
 ## Infrasturcture-as-code
-While Pytorch model training and inference can be performed on a local machine, it is often useful to leverage cloud resources. These cloud resources can be provisioned using the GUI, but leveraging infrastructure-as-code is often preferrable from the perspective of repeatability and teamwork.
+While PyTorch model training and inference can be performed on a local machine, it is often useful to leverage cloud resources. These cloud resources can be provisioned using the GUI, but leveraging infrastructure-as-code is often preferrable from the perspective of repeatability and teamwork.
 
 ### Ask @azure for recommended Azure resources
 ```text
