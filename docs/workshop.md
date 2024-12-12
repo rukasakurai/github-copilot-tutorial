@@ -588,9 +588,8 @@ You can also use GitHub Copilot to help you generate stubs and mocks for your te
 Chat participants are like specialized experts who can assist you with specific tasks. You can mention them in the chat using the @ symbol. Currently, there are three Chat participants available for Visual Studio Code:
 
 - **@workspace**: This chat participant has knowledge about the code in your workspace and can help you navigate it by finding relevant files or classes. The @workspace chat participant uses a meta prompt to determine what information to collect from the workspace to help answer your question.
-- **@vscode**: This chat participant is knowledgeable about commands and features in the VS Code editor itself, and can assist you in using them.
 - **@terminal**: This chat participant has context about the Visual Studio Code terminal shell and its contents.
-- **@azure**: Thit chat participant is designed to help streamline the process of developing with Azure.
+- **@azure**: This chat participant is designed to help streamline the process of developing with Azure.
 
 Open the side Chat panel and type **@workspace /New* to specify that you want to create a new project. For instance, try to create an Asp.Net project
 
@@ -991,3 +990,6 @@ dotnet publish -c Release -o publish
 docker build -t dotnetapp .
 docker run -d -p 8080:80 --name dotnetapp dotnetapp
 ```
+
+## Code Optimization
+With the [Code Optimizations extension for Visual Studio Code](https://learn.microsoft.com/azure/azure-monitor/insights/code-optimizations-vscode-extension), you can generate a code fix proposal for performance issues identified by Code Optimizations in your running. NET apps
